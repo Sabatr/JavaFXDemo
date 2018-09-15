@@ -14,12 +14,22 @@ import java.io.IOException;
 public class MainMenuController extends ParentController{
 
     /**
-     * This function acts as a listener to change to the
+     * This method acts as a listener to change to the
+     * first menu.
+     * @throws IOException
+     */
+    @FXML
+    private void moveToFirst() throws IOException {
+        new SceneBuilder(_stage).load("FirstMenu.fxml");
+    }
+
+    /**
+     * This method acts as a listener to change to the
      * second menu.
      * @throws IOException
      */
     @FXML
-    private void nextMenu() throws IOException {
+    private void moveToSecond() throws IOException {
         new SceneBuilder(_stage).load("SecondMenu.fxml");
     }
 }

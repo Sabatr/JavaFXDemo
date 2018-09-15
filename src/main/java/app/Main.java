@@ -15,6 +15,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        stage.setResizable(false);
+        stage.setTitle("Demo");
         new SceneBuilder(stage).load("MainMenu.fxml");
     }
 
