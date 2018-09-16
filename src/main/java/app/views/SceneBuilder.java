@@ -32,6 +32,9 @@ public class SceneBuilder extends FXMLLoader {
         Parent layout = this.load();
         setStage(getController());
         Scene scene = new Scene(layout);
+        //allows the correct style sheet to be applied to the fxml
+        String css = this.getClass().getResource("styles/"+url.substring(0,url.length()-4)+"css").toExternalForm();
+        scene.getStylesheets().add(css);
         _stage.setScene(scene);
         _stage.show();
     }

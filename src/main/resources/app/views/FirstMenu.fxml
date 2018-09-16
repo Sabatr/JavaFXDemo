@@ -9,14 +9,14 @@
 These are the components which represent the first menu.
 -->
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.FirstMenuController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styles/FirstMenu.css" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.FirstMenuController">
    <children>
       <Text fx:id="_timerText" layoutX="227.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00">
          <font>
             <Font size="40.0" />
          </font>
       </Text>
-      <Button fx:id="_timerButton" layoutX="195.0" layoutY="226.0" mnemonicParsing="false" onAction="#startTimer" text="Start" />
-      <Button fx:id="_backButton" layoutX="341.0" layoutY="226.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button fx:id="_timerButton" layoutX="195.0" layoutY="226.0" mnemonicParsing="false" onAction="#startTimer" styleClass="_timerButton" stylesheets="@styles/FirstMenu.css" text="Start" />
+      <Button fx:id="_backButton" layoutX="341.0" layoutY="226.0" mnemonicParsing="false" onAction="#goBack" styleClass="_backButton" stylesheets="@styles/FirstMenu.css" text="Back" />
    </children>
 </AnchorPane>

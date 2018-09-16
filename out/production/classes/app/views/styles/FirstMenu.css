@@ -1,0 +1,7 @@
+._timerButton {
+    -fx-background-radius: 20px;
+}
+
+._backButton {
+    -fx-background-color: red;
+}

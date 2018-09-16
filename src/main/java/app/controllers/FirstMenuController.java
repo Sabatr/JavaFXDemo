@@ -25,6 +25,7 @@ public class FirstMenuController extends ParentController {
     @FXML
     private Button _backButton;
 
+
     /**
      * When the start button is clicked the timer starts
      * on a separate thread. The buttons are disabled during this process.
@@ -50,20 +51,22 @@ public class FirstMenuController extends ParentController {
      * A private class which allows concurrency.
      */
     private class Timer extends Task<Void> {
+        
+        /**
+         * This method does the counting
+         * @throws InterruptedException
+         */
         private void count() throws InterruptedException{
-            _backButton.setDisable(true);
             _timerButton.setDisable(true);
             int i=0;
             //This allows the counter to set the text up each time.
-            while (i<5) {
-                for (int j=0;j<100;j++) {
-                    if (j<10) {
-                        _timerText.setText("00:0"+i+":0"+j);
-                    } else {
-                        _timerText.setText("00:0"+i+":"+j);
-                    }
-                    Thread.sleep(10);
+            while (i<100) {
+                if (i<10) {
+                    _timerText.setText("00:00:0" + i);
+                } else {
+                    _timerText.setText("00:00:" + i);
                 }
+                Thread.sleep(10);
                 i++;
             }
         }
@@ -89,7 +92,6 @@ public class FirstMenuController extends ParentController {
                         @Override
                         public void run() {
                             _timerText.setText("00:00:00");
-                            _backButton.setDisable(false);
                             _timerButton.setDisable(false);
                         }
                     }
