@@ -3,6 +3,10 @@
 of SceneBuilder. </p> 
 
 <h3> Previews </h3>
-<img src="https://thumbs.gfycat.com/FelineBlondBoubou-size_restricted.gif" />
-<img src="https://thumbs.gfycat.com/KindDeadAsiandamselfly-size_restricted.gif" styles={height:400px,width:500px}/>
-<img src="https://thumbs.gfycat.com/ShallowShamelessHuia-size_restricted.gif" />
+<h5> A demonstration of switching scenes.</h5>
+
+<img src="https://thumbs.gfycat.com/FelineBlondBoubou-size_restricted.gif" height="450px" width="600px"/>
+
+| Concurrency   | Listing |
+| ------------- | ------------- |
+| <img src="https://thumbs.gfycat.com/KindDeadAsiandamselfly-size_restricted.gif" height="350px" width="500px"/>|<img src="https://thumbs.gfycat.com/ShallowShamelessHuia-size_restricted.gif" height="350px" width="500px"/> |
