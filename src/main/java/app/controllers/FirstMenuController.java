@@ -51,7 +51,7 @@ public class FirstMenuController extends ParentController {
      * A private class which allows concurrency.
      */
     private class Timer extends Task<Void> {
-        
+
         /**
          * This method does the counting
          * @throws InterruptedException
